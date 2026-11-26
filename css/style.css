@@ -764,3 +764,298 @@ footer p {
     height: 48px;
   }
 }
+
+/* Premios y reconocimientos */
+.awards-page {
+  overflow: hidden;
+}
+
+.section-kicker {
+  margin: 0 0 8px;
+  color: var(--subtitulo-interno);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.awards-intro {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 30px;
+  padding: 30px;
+  overflow: hidden;
+  border: 1px solid var(--borde);
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--fondo-suave), #fff);
+}
+
+.awards-intro > div {
+  position: relative;
+  z-index: 1;
+  max-width: 690px;
+}
+
+.awards-intro__label {
+  margin: 0 0 6px;
+  color: var(--subtitulo-interno);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.awards-intro h3,
+.awards-note h3,
+.award-card h3 {
+  color: var(--titulo-interno);
+}
+
+.awards-intro h3 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.awards-intro p:last-child {
+  margin: 12px 0 0;
+  line-height: 1.65;
+}
+
+.awards-intro__symbol {
+  align-self: center;
+  color: var(--azul);
+  font-size: 88px;
+  line-height: 1;
+  opacity: 0.24;
+}
+
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.award-card {
+  min-height: 250px;
+  padding: 26px;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  background: var(--fondo-card);
+  box-shadow: 0 7px 18px rgba(111, 78, 114, 0.07);
+}
+
+.award-card__symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background: var(--azul-claro);
+  color: var(--azul-oscuro);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.award-card h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.award-card p {
+  margin: 0;
+  color: var(--gris-texto);
+  line-height: 1.6;
+}
+
+.awards-note {
+  margin-top: 24px;
+  padding: 24px 26px;
+  border-left: 4px solid var(--detalle);
+  border-radius: 0 12px 12px 0;
+  background: var(--fondo-suave);
+}
+
+.awards-note h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.awards-note p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+.award-entry {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 24px;
+  margin-top: 24px;
+  padding: 24px 0;
+  border-top: 1px solid var(--borde);
+}
+
+.award-entry__year {
+  color: var(--azul-oscuro);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.award-entry__category {
+  margin: 0 0 5px;
+  color: var(--subtitulo-interno);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .awards-intro {
+    padding: 24px;
+  }
+
+  .awards-intro__symbol {
+    display: none;
+  }
+
+  .award-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .award-card {
+    min-height: auto;
+  }
+
+  .award-entry {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+/* Navegación compacta: conserva cada sección en una sola línea al sumar Premios. */
+@media (min-width: 761px) {
+  .menu-item {
+    flex: 0 0 auto;
+  }
+
+  .menu-link,
+  .dropdown-button {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1280px) {
+  .menu {
+    max-width: 1400px;
+    padding-right: 110px;
+  }
+
+  .menu-link,
+  .dropdown-button {
+    padding: 18px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1279px) {
+  .menu {
+    max-width: 100%;
+    justify-content: flex-start;
+    padding-right: 100px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menu-link,
+  .dropdown-button {
+    padding: 17px 9px;
+    font-size: 13px;
+  }
+}
+
+.awards-note--primary {
+  margin-top: 28px;
+}
+
+.awards-empty {
+  margin-top: 18px;
+  padding: 22px 26px;
+  border: 1px dashed var(--borde);
+  border-radius: 12px;
+  color: var(--gris-texto);
+  background: var(--fondo-card);
+}
+
+.awards-empty p {
+  margin: 0;
+}
+
+/* Acceso al formulario de voluntariado */
+.volunteer-fab {
+  position: fixed;
+  right: 26px;
+  bottom: 26px;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 206px;
+  padding: 14px 19px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 14px;
+  background: var(--azul-oscuro);
+  color: var(--blanco);
+  box-shadow: 0 10px 24px rgba(66, 40, 69, 0.28);
+  text-decoration: none;
+  transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+}
+
+.volunteer-fab:hover,
+.volunteer-fab:focus-visible {
+  background: var(--azul);
+  color: var(--blanco);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(66, 40, 69, 0.34);
+}
+
+.volunteer-fab:focus-visible {
+  outline: 3px solid var(--azul-claro);
+  outline-offset: 3px;
+}
+
+.volunteer-fab__eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.88;
+}
+
+.volunteer-fab__label {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+@media (max-width: 760px) {
+  .volunteer-fab {
+    right: 16px;
+    bottom: 16px;
+    min-width: 0;
+    padding: 12px 15px;
+  }
+
+  .volunteer-fab__eyebrow {
+    font-size: 11px;
+  }
+
+  .volunteer-fab__label {
+    font-size: 14px;
+  }
+}
