@@ -11,6 +11,25 @@ document.addEventListener("DOMContentLoaded", () => {
     "☰ Menú": "☰ Menu",
     "Integrantes": "Members",
     "Líneas de investigación": "Research lines",
+    "Premios": "Awards",
+    "Quiero participar": "I want to take part",
+    "en investigaciones": "in research studies",
+    "Abrir formulario para participar en investigaciones": "Open the research participation form",
+    "Premios y reconocimientos": "Awards and recognitions",
+    "Premios y reconocimientos | ITRAPSI": "Awards and recognitions | ITRAPSI",
+    "Premios y reconocimientos al trabajo del equipo.": "Awards and recognitions for the team's work.",
+    "Trayectoria y compromiso": "Track record and commitment",
+    "Este espacio reúne las distinciones que reconocen el trabajo de las personas integrantes de ITRAPSI, sus proyectos y su aporte a la investigación, la formación y la extensión universitaria.": "This space brings together distinctions that recognize the work of ITRAPSI members, their projects, and their contribution to research, training, and university outreach.",
+    "Reconocer el trabajo colectivo": "Recognizing collective work",
+    "Distinciones que impulsan nuevas iniciativas": "Distinctions that foster new initiatives",
+    "Las convocatorias, premios, menciones y reconocimientos obtenidos por el equipo se incorporarán aquí junto con la institución otorgante, el año y los materiales vinculados cuando estén disponibles.": "Calls, awards, mentions, and recognitions received by the team will be added here together with the granting institution, year, and related materials when available.",
+    "Reconocimientos institucionales": "Institutional recognitions",
+    "Reconocimientos individuales": "Individual recognitions",
+    "Participaciones destacadas": "Highlighted participations",
+    "Próximas incorporaciones": "Upcoming additions",
+    "Reconocimientos del equipo": "Team recognitions",
+    "En esta página se publicarán los premios, menciones, becas y otras distinciones recibidas por integrantes y proyectos de ITRAPSI, ordenados por año.": "This page will publish awards, mentions, scholarships, and other distinctions received by ITRAPSI members and projects, ordered by year.",
+    "Próximamente se incorporarán los primeros reconocimientos.": "The first recognitions will be added soon.",
     "Extensión": "Outreach",
     "Extensión ▾": "Outreach ▾",
     "Extensión | ITRAPSI": "Outreach | ITRAPSI",
@@ -234,3 +253,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   applyLanguage(savedLanguage === "en" ? "en" : "es", false);
 });
+
+
+
+
+
